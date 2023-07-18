@@ -14,7 +14,7 @@
     <mirror>
       <id>central</id>
       <name>central</name>
-      <url>http://13.232.122.227:1234/repository/my-maven-releases/</url>
+      <url>http://localhost:1234/repository/my-maven-releases/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
