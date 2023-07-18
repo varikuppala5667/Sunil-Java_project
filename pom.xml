@@ -164,7 +164,7 @@
     <repositories>
         <repository>
             <id>my-maven-releases</id>
-            <url>http://13.232.122.227:1234/repository/my-maven-releases/</url>
+            <url>http://localhost:1234/repository/my-maven-releases/</url>
         </repository>
     </repositories>
 </project>
