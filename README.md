@@ -74,3 +74,17 @@ To Run the Application:
 •	mvn jetty:run
 
 To host the application paste the URL of Ip address in the browser : http://localhost:8080
+
+To install maven in running jenkins container:
+• docker exec -u 0 -it <jenkins-container-id> /bin/bash
+• apt-get update
+• apt-get install -y maven
+• mvn --version
+
+In order to commit this jenkins with maven container and create new image (containing jenkins and maven):
+• docker commit <jenkins_container_id> <new_image_name>
+
+Use any of the following docker run commands to create new container with the above new image:
+• #docker run -d -p 1234:8080 -p 50000:50000 --name jenkinscontainer jenkins:maven
+• docker run -d -p 1234:8080 --name jenkinscontainer jenkins:maven
+
